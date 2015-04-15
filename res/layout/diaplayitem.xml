@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/display_background"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:stretchColumns="*"
+	 	android:padding="13dip" >
+
+        <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/title"
+	            android:layout_marginLeft="10dp"
+	            android:paddingTop="10dp"
+	            android:text="任务主题：世纪大道大堵车"
+	            android:textColor="#000000"
+	            android:textSize="15dp" />
+
+   		 </TableRow>
+		<TableRow
+	        android:id="@+id/tableRow2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/info"
+	            android:layout_marginLeft="10dp"
+	            android:paddingTop="5dp"
+	            android:text="请对堵车情况进行拍照，谢谢！"
+	            android:textColor="#999999"
+	            android:textSize="10dp" />
+ 
+	    </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:padding="3dip" >
+		
+        <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="18dp"
+	            android:layout_marginTop="2dp"
+	         	style="@style/textview_allgrade_content"
+	            android:background="@drawable/display_distance"/>
+
+	        <TextView
+	            android:id="@+id/distance"
+	            style="@style/textview_allgrade_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="1.5km" />
+
+	        <TextView
+	            android:layout_marginLeft="5dp"
+	            style="@style/textview_allgrade_content"
+	            android:textSize="12dp"
+	            android:text="|"
+	         />
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginTop="5dp"
+	         	style="@style/textview_allgrade_content"
+	            android:background="@drawable/display_worth"/>
+	        <TextView
+	            android:id="@+id/money"
+	            android:layout_marginLeft="5dp"
+	            style="@style/textview_allgrade_content"
+	            android:text="20金币"
+	         />
+	        <TextView
+	            android:layout_marginLeft="5dp"
+	            style="@style/textview_allgrade_content"
+	            android:textSize="12dp"
+	            android:text="|"
+	         />
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginTop="5dp"
+	         	style="@style/textview_allgrade_content"
+	            android:background="@drawable/display_time"/>
+	        <TextView
+	            android:id="@+id/creattime"
+	            android:layout_marginLeft="5dp"
+	            style="@style/textview_allgrade_content"
+	            android:text="15分钟前发布"
+	         />
+   		 </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:stretchColumns="*"
+	 	android:padding="3dip" >
+        <TableRow
+        android:id="@+id/tableRow4"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+	        <TextView
+	            android:id="@+id/videonear"
+	            android:paddingTop="8dp"
+	            android:text="附近的视频"
+	            android:textColor="#000000"
+	            android:layout_marginLeft="18dp"
+	            android:textSize="10dp" 
+	         />
+	         <TextView
+	            android:text="|"
+	            android:textColor="#000000"
+	            android:textSize="12dp" 
+	         />
+	        <TextView
+	            android:id="@+id/jobnear"
+	            android:text="附近的任务"
+	            android:textColor="#000000"
+	            android:textSize="10dp" 
+	         />
+	        <TextView
+	            android:text="|"
+	            android:textColor="#000000"
+	            android:textSize="12dp" 
+	         />
+	        <TextView
+	            android:id="@+id/viewdetail"
+	            android:text="查看详情"
+	            android:textColor="#000000"
+	            android:textSize="10dp" 
+	         />
+   		 </TableRow>
+    </TableLayout>
+</LinearLayout>
